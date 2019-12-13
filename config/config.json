@@ -8,6 +8,11 @@
         "dialect": "postgres"
     },
     "test": {
-        
+        "username": "arun",
+        "password": "arunp",
+        "database": "acesso",
+        "host": "localhost",
+        "port": 15432,
+        "dialect": "postgres"
     }
 }

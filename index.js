@@ -14,4 +14,12 @@ async function Main() {
     return ret
 }
 
+// async function addItem() {
+//     const item = {
+//         name: 'Teste Inclusao',
+//         email: 'teste@teste.com.br',
+
+//     }
+// }
+
 Main()

@@ -17,6 +17,29 @@ class Users {
         })
         return ret
     }
+
+    async add(item) {
+        if (!item)
+            return {}
+
+        let newItem = await this.model.create(item, {
+            raw: true
+        })
+
+        return newItem.dataValues
+    }
+
+    async remove(filtro) {
+        if (!filtro)
+            return 0
+
+        let rem = await this.model.destroy({
+            where: filtro,
+            raw: true
+        })
+
+        return rem
+    }
 }
 
 module.exports = Users
